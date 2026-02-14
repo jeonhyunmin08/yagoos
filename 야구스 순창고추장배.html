@@ -1,0 +1,138 @@
+<index.html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>야구스 순창군수배 전국유소년 야구대회 기록</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      height: 100vh;
+    }
+
+    /* 전체 레이아웃 */
+    .page {
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* 좌우 이미지 영역 */
+    .side {
+      flex: 1;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      opacity: 0.35;
+    }
+
+    .left {
+      background-image: url("left.jpg");
+    }
+
+    .right {
+      background-image: url("right.jpg");
+    }
+
+    /* 중앙 카드 */
+    .container {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.25);
+      width: 95%;
+      max-width: 760px;
+      padding: 65px 55px;
+      border-radius: 26px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 12px 35px rgba(0,0,0,0.35);
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 25px;
+      opacity: 0.9;
+    }
+
+    .btn {
+      white-space: nowrap;
+      display: inline-block;
+      padding: 14px 30px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #2a5298;
+      background: white;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #f1f1f1;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 13px;
+      opacity: 0.6;
+    }
+
+    /* ✅ 모바일 대응 */
+    @media (max-width: 768px) {
+      .side {
+        display: none;
+      }
+
+      .container {
+        max-width: 95%;
+        padding: 55px 35px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <div class="side left"></div>
+
+    <div class="container">
+      <h1>야구스</h1>
+      <p>
+        순창군수배<br>
+        기록하러 이동하기<br>
+        아이디:brm1<br>
+        비밀번호:1125
+      </p>
+
+      <a href="https://mineball.kr/%EB%8C%80%ED%9A%8C%EC%9D%BC%EC%A0%95%EA%B2%B0%EA%B3%BC/jnmgplmhlk/kybf/ac?date=" class="btn">
+        기록하러 가기
+      </a>
+
+      <footer>
+        made by hyunmin      
+      </footer>
+    </div>
+
+    <div class="side right"></div>
+  </div>
+</body>
+</html>
